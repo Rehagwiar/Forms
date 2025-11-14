@@ -13,11 +13,7 @@ body{
 a{
   text-decoration: none;
 }
- 
-/* esconde as ancoras da tela */
-a.links{
-  display: none;
-}
+
 
 .content{
   width: 500px;
@@ -142,6 +138,7 @@ input[type="submit"]:hover{
   border: 1px solid #4ab3c6;
 }
 
+/* qual tela é escondida ao trocar de telaqual tela é escondida ao trocar de tela */
 #cadastro, 
 #login{
   position: absolute;
@@ -164,8 +161,9 @@ input[type="submit"]:hover{
   animation-fill-mode: both;
 }
 
+
 /* Efeito ao clicar no botão ( Ir para Login ) */
-#paracadastro:target ~ .content #cadastro,
+
 #paralogin:target ~ .content #login{
   z-index: 2;
   -webkit-animation-name: fadeInLeft;
@@ -173,7 +171,7 @@ input[type="submit"]:hover{
  
   -webkit-animation-delay: .1s;
   animation-delay: .1s;
-}
+} 
  
 /* Efeito ao clicar no botão ( Cadastre-se ) */
 #registro:target ~ .content #login,
